@@ -1,0 +1,41 @@
+Use Cases Document
+
+Ching Wing Cheng
+
+Application Name: SlidingPuzzleApp
+Actor: Player
+
+Use Case 1: Select Tile
+	Participating Actor: Initiated by Player
+	Entry Condition: N/A
+	Exit Condition: The tile selected by player indicates it is selected
+	Flow Of Events:
+		1. The Player requests a tile to be selected
+		2. SlidingPuzzleApp marks the tile as selected and refreshes the display
+
+Use Case 2: Move Selected Tile
+	Participating Actor: Initiated by Player
+	Entry Condition: A tile is selected and the direction of Player's move request of selected tile is 
+		not bordered by other tiles and/or the end of the puzzle board
+	Exit Condition: The selected tile is moved up, down, left, or right 
+	Flow Of Events:
+		1. The Player requests the selected tile to be moved up, down, left, or right
+		2. SlidingPuzzleApp moves the selected tile to its new position and refreshes the display
+		
+Use Case 3: Reset Puzzle
+	Participating Actor: Initiated by Player
+	Entry Condition: Puzzle not already at initial state
+	Exit Condition: All the tiles are placed back in its initial positions and the number of moves gets
+		reset to the value of zero
+	Flow Of Events:
+		1. The Player requests SlidingPuzzleApp to reset puzzle to intial state
+		2. SlidingPuzzleApp places all the tiles back to its initial positions, resets number of moves to zero,
+			and refreshes the display
+		
+Use Case 4: Quit Application
+	Participating Actor: Initiated by Player
+	Entry Condition: N/A
+	Exit Condition: The applications stops running
+	Flow Of Events:
+		1. The Player requests to quit the application
+		2. SlidingPuzzleApp stops running and exits application
